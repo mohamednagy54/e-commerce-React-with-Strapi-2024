@@ -12,7 +12,6 @@ import { useState } from "react";
 
 const ProductDetails = ({ clickedProduct }) => {
   const [selectedImg, setselectedImg] = useState(0);
-  
 
   return (
     <Box
@@ -62,7 +61,6 @@ const ProductDetails = ({ clickedProduct }) => {
             }}
           >
             {clickedProduct.attributes.productImg.data.map((item, index) => {
-              console.log(item);
               return (
                 <ToggleButton
                   key={item}

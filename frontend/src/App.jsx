@@ -9,6 +9,7 @@ import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/Scroll/ScrollToTop";
 
+
 function App() {
   const [theme, colorMode] = useMode();
   return (
@@ -21,6 +22,8 @@ function App() {
         theme={theme}
       >
         <CssBaseline />
+
+        
         <TopHeader />
         <MiddleHeader />
         <BottomHeader />
